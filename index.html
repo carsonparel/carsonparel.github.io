@@ -47,6 +47,12 @@
             .project-caption { padding: 24px; }
             .project-caption h3 { font-size: 21px; }
             .project-caption span { color: #396db2; font-weight: 600; }
+            .professional-links {display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+            .social-btn { display: inline-block; align-items: center; justify-content: center;width: 44px; height: 44px; border: 1px solid #396db2; border-radius: 4px; color: #396db2; font-size: 20px; transition: all 0.2s ease;}
+            .social-btn:hover, .social-btn:focus { background: #396db2; color: white;}
+            .contact-link { display: inline-block; color: #dddddd; padding: 10px ; transition: color 0.2s ease; }
+            .contact-link p {color: inherit; margin-top: 12px; }
+            .contact-link:hover, .contact-link:focus { color: #7da9e5;}
         </style>
     </head>
 
@@ -143,17 +149,27 @@
                                 <div class="col-md-6 pl-0">
                                     <p><strong>Location:</strong> San Diego, CA</p>
                                     <p><strong>Major:</strong> Mechanical Engineering</p>
+                                </div>
+
+                                <div class="col-md-6 pl-0">
+                                    <p><strong>Email:</strong> 
+                                      <a href="mailto:cparel2004@gmail.com">cparel2004@gmail.com</a></p>
                                     <p><strong>Graduation:</strong> June 2027 (Expected)</p>
                                 </div>
-                                <div class="col-md-6 pl-0">
-                                    <p><strong>Email:</strong> <a href="mailto:carsonparel@gmail.com">carsonparel@gmail.com</a></p>
-                                    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/carsonparel" target="_blank" rel="noopener noreferrer">carsonparel</a></p>
-                                    <p><strong>GitHub:</strong> <a href="https://github.com/carsonparel" target="_blank" rel="noopener noreferrer">carsonparel</a></p>
-                                </div>
                             </div>
-                            <span class="about-button">
-                                <a class="main-btn" href="files/Carson_Parel_Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
-                            </span>
+                            <!--Professional Links-->
+                            <div class="professional-links">
+                              <a class="main-btn" href="files/Carson_Parel_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-file-pdf-o"></i> View Resume
+                              </a>
+                              <a class="social-btn" href="https://linkedin.com/in/carson-parel" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                                <i class="fa fa-linkedin"></i> 
+                              </a>
+
+                              <a class="social-btn" href="https://github.com/carsonparel" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                                <i class="fa fa-github"></i> 
+                              </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -329,20 +345,41 @@
         <!--Services Section End-->
 
         <!--Contact Section Start-->
-        <section id="contact" class="contact bg-gray pt-100 pb-100" data-scroll-index="6">
+        <section id="contact" class="contact pt-100 pb-100" data-scroll-index="6" style="background: #252525; color: white">
             <div class="container">
                 <div class="heading text-center">
-                    <h6>Contact</h6>
-                    <h2>Get In Touch</h2>
+                    <h6 style="color: #aaaaaa;">Contact</h6>
+                    <h2 style="color: white;">Get In Touch</h2>
                 </div>
-                <div class="text-center">
-                    <p>Feel free to reach out regarding engineering opportunities or projects.</p>
-                    <p class="mt-30"><a class="main-btn" href="mailto:carsonparel@gmail.com">Email Me</a></p>
-                    <p class="mt-20"><a href="https://linkedin.com/in/carsonparel" target="_blank" rel="noopener noreferrer">LinkedIn</a> &nbsp; | &nbsp; <a href="https://github.com/carsonparel" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-                </div>
+                <p class="text-center" style="color: #dddddd;">
+                    Feel free to reach out regarding engineering opportunities or projects.</p>
+                </p>
+
+            <div class="row text-center mt-40">
+                <div class="col-4>
+                    <a href="mailto:carsonparel@gmail.com" class="contact-link">
+                    <i class="fa fa-envelope fa-2x"></i>
+                    <p>Email</p>
+                </a>
             </div>
-        </section>
-        <!--Contact Section End-->
+
+            <div class="col-4">
+                <a href="https://linkedin.com/in/carsonparel" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <i class="fa fa-linkedin fa-2x"></i>
+                    <p>LinkedIn</p>
+                </a>
+            </div>
+
+            <div class="col-4">
+                <a href="https://github.com/carsonparel" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <i class="fa fa-github fa-2x"></i>
+                    <p>GitHub</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Contact Section End-->
 
         <!--Footer Start-->
         <footer class="pt-50 pb-50">
